@@ -2,9 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class Layout extends React.Component {
+  constructor(){
+    super();
+    this.nombre = 'Christian Santa Maria'
+  }
+  obtenerNombre(){
+    return "Codigo Facilito";
+  }
   render(){
     return(
-      <h1>Hola Mundo!</h1>
+      <h1>Hola {this.obtenerNombre()}</h1>
     );
   }
 }
